@@ -1,0 +1,323 @@
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <!-- <script src="JS/func.js"></script> -->
+    <link rel="stylesheet" href="./CSS/student-form.css" />
+    <style>
+      /* body {
+                background-color: #000000;
+            } */
+    </style>
+  </head>
+
+  <body>
+    <h1><u>Student Registration Form</u></h1>
+    <!-- <form action="http://localhost:5000/test" method="post"> -->
+    <form action="" method="post">
+      <table class="grid">
+        <tr>
+          <td class="first-row"><p>First Name</p></td>
+          <td>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              maxlength="30"
+              pattern="[A-Za-z]*"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row"><p>Last Name</p></td>
+          <td>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              maxlength="30"
+              pattern="[A-Za-z]*"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <p>DATE OF BIRTH</p>
+          </td>
+          <td>
+            <input type="date" name="dob" value="dob" />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <p>EMAIL ID</p>
+          </td>
+          <td><input type="email" id="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <p>MOBILE NUMBER</p>
+          </td>
+          <td>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              maxlength="10"
+              minlength="10"
+              pattern="\d{10}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row"><p>GENDER</p></td>
+          <td>
+            <label for="gender">Male</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="gender">Female</label>
+            <input type="radio" id="female" name="gender" value="female" />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <p>ADDRESS</p>
+          </td>
+          <td>
+            <textarea id="address" name="address" rows="5" cols="40"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <p>CITY</p>
+          </td>
+
+          <td>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              maxlength="30"
+              pattern="[A-Za-z]*"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <p>PIN CODE</p>
+          </td>
+
+          <td>
+            <input
+              type="number"
+              id="pincode"
+              name="pincode"
+              maxlength="6"
+              minlength="6"
+            /><br />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <p>STATE</p>
+          </td>
+
+          <td>
+            <input type="text" id="state" name="state" value="" /><br /><br />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <p>COUNTRY</p>
+          </td>
+          <td>
+            <input type="text" id="country" name="country" value="India" />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row"><p>HOBBIES</p></td>
+          <td>
+            <label for="drawing"> Drawing</label>
+            <input
+              type="checkbox"
+              id="drawing"
+              name="drawing"
+              value="drawing"
+            />
+            <label for="singing"> Singing</label>
+            <input
+              type="checkbox"
+              id="singing"
+              name="singing"
+              value="singing"
+            />
+            <label for="dancing"> Dancing</label>
+            <input
+              type="checkbox"
+              id="dancing"
+              name="dancing"
+              value="dancing"
+            />
+            <label for="sketching"> Sketching</label>
+            <input
+              type="checkbox"
+              id="sketching"
+              name="sketching"
+              value="sketching"
+            /><br />
+            <label for="other"> Other</label>
+            <input type="checkbox" id="other" name="other" value="other" />
+            <input type="text" id="other-text" name="other-text" />
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row"><p>QUALIFICATION</p></td>
+          <td>
+            <table>
+              <tr>
+                <th>Sl.No.</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+              </tr>
+              <tr>
+                <td><p>1</p></td>
+                <td><p>Class X</p></td>
+                <td>
+                  <input type="text" id="xBoard" name="xBoard" maxlength="10" />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="xPercent"
+                    name="xPercent"
+                    step="0.01"
+                    min="0.00"
+                    max="100.00"
+                  />
+                </td>
+                <td class="yop">
+                  <input
+                    type="number"
+                    id="xYOP"
+                    name="xYOP"
+                    step="1"
+                    min="2000"
+                    max="2025"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><p>2</p></td>
+                <td><p>Class XII</p></td>
+                <td>
+                  <input
+                    type="text"
+                    id="xiiBoard"
+                    name="xiiBoard"
+                    maxlength="10"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="xiiPercent"
+                    name="xiiPercent"
+                    step="0.01"
+                    min="0.00"
+                    max="100.00"
+                  />
+                </td>
+                <td class="yop">
+                  <input
+                    type="number"
+                    id="xiiYOP"
+                    name="xiiYOP"
+                    step="1"
+                    min="2000"
+                    max="2025"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><p>3</p></td>
+                <td><p>Graduation</p></td>
+                <td>
+                  <input type="text" id="gBoard" name="gBoard" maxlength="10" />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="gPercent"
+                    name="gPercent"
+                    step="0.01"
+                    min="0.00"
+                    max="100.00"
+                  />
+                </td>
+                <td class="yop">
+                  <input
+                    type="number"
+                    id="gYOP"
+                    name="gYOP"
+                    step="1"
+                    min="2000"
+                    max="2025"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><p>4</p></td>
+                <td><p>Masters</p></td>
+                <td>
+                  <input type="text" id="mBoard" name="mBoard" maxlength="10" />
+                </td>
+                <td>
+                  <input
+                    type="number"
+                    id="mPercent"
+                    name="mPercent"
+                    step="0.01"
+                    min="0.00"
+                    max="100.00"
+                  />
+                </td>
+                <td class="yop">
+                  <input
+                    type="number"
+                    id="mYOP"
+                    name="mYOP"
+                    step="1"
+                    min="2000"
+                    max="2025"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row"><p>COURSES APPLIED FOR</p></td>
+          <td>
+            <label for="courses">BCA</label>
+            <input type="radio" id="bca" name="courses" value="bca" />
+            <label for="courses">B.Com</label>
+            <input type="radio" id="bcom" name="courses" value="bcom" />
+            <label for="courses">B.Sc</label>
+            <input type="radio" id="bsc" name="courses" value="bsc" />
+            <label for="courses">BA</label>
+            <input type="radio" id="ba" name="courses" value="ba" />
+          </td>
+        </tr>
+      </table>
+      <!-- <label for="fname">FIRST NAME</label>
+    <input type="text" id="fname" name="fname" value="John" /><br />
+    <label for="lname">LAST NAME:</label>
+      <input type="text" id="lname" name="lname" value="Doe" /><br /> -->
+      <!-- <input type="text" id="fname" name="fname" value="John" /><br /> -->
+      <div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>

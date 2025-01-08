@@ -1,0 +1,64 @@
+body {
+  /* align-items: center;
+  align-content: center;
+  justify-content: center; */
+  /* width: 500px; */
+  /* background-color: aqua; */
+  /* margin-left: auto; */
+  /* margin-right: 0px; */
+  display: grid;
+  place-items: center;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: brown;
+}
+form {
+  /* margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%; */
+  border: 2px solid black;
+  width: fit-content;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: grid;
+  place-items: center;
+  background-color: brown;
+  align-items: center;
+}
+/* .grid {
+  width: 80%;
+} */
+p,
+label,
+strong,
+th {
+  /* text-transform: uppercase; */
+  color: white;
+  font-weight: bold;
+}
+.first-row {
+  /* width: 20%; */
+  padding-left: 4%;
+  padding-right: 4%;
+}
+/* table,
+th,
+td {
+  border: 1px solid black;
+} */
+div {
+  padding: 2%;
+}
+.grid input {
+  margin: 0%;
+  /* padding: 24%; */
+}
+.grid p {
+  text-transform: uppercase;
+}
+.yop {
+  text-align: center;
+}
